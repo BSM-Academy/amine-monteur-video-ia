@@ -1,0 +1,5 @@
+numpy
+scipy
+pillow
+requests
+alibabacloud-oss-v2

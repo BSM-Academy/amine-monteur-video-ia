@@ -1,0 +1,153 @@
+{
+ "ref": "PS12",
+ "langue_source": "en",
+ "langue_cible": "fr",
+ "voix": {
+  "id": "",
+  "repli_id": "",
+  "vitesse_max": 1.07
+ },
+ "lignes": [
+  {
+   "id": "L1a",
+   "texte": "J'ai accéléré la vidéo, sans coupe ni montage, pour que tu voies l'effet en vrai sur mes pieds secs.",
+   "debut": 0.0,
+   "fin_fenetre": 5.6
+  },
+  {
+   "id": "L2",
+   "texte": "J'ai fait de la gym pendant sept ans.",
+   "debut": 5.65,
+   "fin_fenetre": 7.8
+  },
+  {
+   "id": "L3",
+   "texte": "J'ai une maladie auto-immune, donc j'ai naturellement les pieds secs.",
+   "debut": 7.85,
+   "fin_fenetre": 11.5
+  },
+  {
+   "id": "L4",
+   "texte": "Je les soigne, mais parfois il me faut un truc contre la peau sèche.",
+   "debut": 11.55,
+   "fin_fenetre": 15.1
+  },
+  {
+   "id": "L5",
+   "texte": "Le Peel Shot MaMarque a tout changé pour enlever la peau sèche de mes pieds.",
+   "debut": 15.15,
+   "fin_fenetre": 19.4
+  },
+  {
+   "id": "L6",
+   "texte": "Regarde ce qu'il fait ici.",
+   "debut": 19.45,
+   "fin_fenetre": 21.05
+  },
+  {
+   "id": "L7",
+   "texte": "Quelques gouttes suffisent.",
+   "debut": 21.1,
+   "fin_fenetre": 22.75
+  },
+  {
+   "id": "L8",
+   "texte": "Pour les pieds secs, c'est celui-là.",
+   "debut": 22.8,
+   "fin_fenetre": 25.03
+  },
+  {
+   "id": "L9",
+   "texte": "Le pack est toujours en promo, je te le conseille.",
+   "debut": 25.08,
+   "fin_fenetre": 27.87
+  },
+  {
+   "id": "L10",
+   "texte": "Franchement, mon meilleur soin pour les pieds.",
+   "debut": 27.92,
+   "fin_fenetre": 30.4
+  }
+ ],
+ "mix": {
+  "fond": "musique"
+ },
+ "rendu": {
+  "crf": 17,
+  "zones_vmake": "auto",
+  "textes": [
+   {
+    "images": [
+     0,
+     90
+    ],
+    "lignes": [
+     "Regarde la peau sèche"
+    ],
+    "y": 815,
+    "taille": 46
+   },
+   {
+    "images": [
+     0,
+     90
+    ],
+    "lignes": [
+     "de mes pieds disparaître"
+    ],
+    "y": 870,
+    "taille": 46
+   },
+   {
+    "images": [
+     0,
+     90
+    ],
+    "lignes": [
+     "(En promo aujourd'hui + livraison offerte)"
+    ],
+    "y": 925,
+    "taille": 25,
+    "graisse": 500
+   },
+   {
+    "images": [
+     714,
+     913
+    ],
+    "lignes": [
+     "1 acheté = 1 offert !"
+    ],
+    "y": 855,
+    "taille": 48
+   }
+  ],
+  "sous_titres": {
+   "mode": "phrase",
+   "y": 1020,
+   "taille": 30,
+   "couleur": [
+    255,
+    255,
+    255
+   ],
+   "couleur_ombre": [
+    0,
+    0,
+    0
+   ],
+   "decalage": [
+    1,
+    2
+   ],
+   "max_car_ligne": 30
+  }
+ },
+ "marque": "ma-marque",
+ "produit": "mon-produit",
+ "site": "",
+ "offre": "celle de la source",
+ "controle": {
+  "sans_voix": []
+ }
+}
