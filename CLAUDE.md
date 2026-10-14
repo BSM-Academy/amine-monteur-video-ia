@@ -23,9 +23,10 @@ Les variables `GROQ_API_KEY`, `ELEVENLABS_API_KEY`, `REPLICATE_API_TOKEN` valent
 **Ne jamais afficher, écrire dans un fichier ni recopier une clé.**
 
 ## La vidéo source
-- Un fichier dans `sources/` de son dépôt `mes-videos-adcloner` (il l'a déposé sur GitHub) : utilise-le.
+- **Vidéo jointe au message** (cas normal : l'élève l'a ajoutée avec le « + » de claude.ai) : elle est dans `/root/.claude/uploads/<id>/<nom>` (trouve-la avec `ls -t /root/.claude/uploads/*/*`). Copie-la dans `travail/<REF>/` et utilise-la.
+- Un fichier dans `sources/` de son dépôt `mes-videos-adcloner` : utilise-le.
 - Un lien direct vers un fichier `.mp4` : télécharge-le avec `curl -L` dans `travail/<REF>/`.
-- Un lien vers une page (bibliothèque publicitaire Meta, TikTok, Instagram…) : explique à l'élève de télécharger la vidéo sur son ordinateur puis de la déposer dans le dossier `sources` de son dépôt `mes-videos-adcloner` sur GitHub (Add file → Upload files → Commit changes), et arrête-toi en attendant.
+- Un lien vers une page (bibliothèque publicitaire Meta, TikTok, Instagram…) : explique à l'élève de télécharger la vidéo sur son ordinateur puis de te l'envoyer avec le bouton « + » sous la zone de message, et arrête-toi en attendant.
 - Vidéo de plus de 90 s : demande confirmation avant de commencer (coût et temps plus élevés).
 
 ## Le brief (à demander avant de commencer, en une seule question)
