@@ -43,11 +43,13 @@ Un seul accord par vidéo suffit. Le clone de voix ElevenLabs est supprimé dès
 Dis clairement quel service bloque et quoi faire ; ne contourne jamais un blocage.
 
 ## Livrer
-Quand le contrôle (`controle.py`) est bon :
+Quand le contrôle est bon, garde son rapport puis livre la vidéo **avec sa fiche et le rapport** (ils servent au formateur pour améliorer AdCloner) :
 ```bash
-bash livrer.sh travail/<REF>/<REF>_<LANGUE>_<FORMAT>_v01.mp4
+python3 adcloner/scripts/controle.py travail/<REF> --planche > travail/<REF>/controle.txt 2>&1
+bash livrer.sh travail/<REF>/<REF>_<LANGUE>_<FORMAT>_v01.mp4 travail/<REF>/fiche.json travail/<REF>/controle.txt
 ```
-Le script pousse la vidéo sur la branche `livraisons` (jamais sur `main`) et affiche le lien. Donne ce lien à l'élève :
+Avant la livraison, ajoute dans `fiche.json` une clé `bilan` : `{"duree_source_s", "vmake_s", "caracteres_elevenlabs", "replicate_appels", "reprises", "problemes": [...]}` (ce qui a bloqué ou demandé une intervention).
+Le script pousse le tout sur la branche `livraisons` (jamais sur `main`), dans `livraisons/<date>/<nom de la vidéo>/`, et affiche le lien de la vidéo. Donne ce lien à l'élève :
 « Clique sur le lien, puis sur le bouton de téléchargement (flèche vers le bas, en haut à droite du fichier). »
 Puis résume en 3 lignes : ce qui a été fait, ce qui a été consommé, ce qu'il doit vérifier lui-même (voix, plans remplacés).
 
