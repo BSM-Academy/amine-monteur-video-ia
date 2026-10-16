@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Livre des fichiers finis dans le dépôt de l'élève (« mes-videos-adcloner », ouvert dans la même session) et affiche le lien de la vidéo.
+# Livre des fichiers finis dans le dépôt de l'élève (« mes-videos-amine-ia », ouvert dans la même session) et affiche le lien de la vidéo.
 # Usage : bash livrer.sh <video.mp4> [fiche.json controle.txt …]  → <dépôt élève>/livraisons/<AAAA-MM-JJ>/<nom de la vidéo>/
 # Dépôt de l'élève : variable ADCLONER_LIVRAISONS, sinon le dépôt git voisin qui ne contient pas AdCloner.
 set -e
@@ -12,7 +12,7 @@ if [ -z "$cible" ]; then
     d="${d%/}"; [ -d "$d/.git" ] && [ ! -f "$d/adcloner/SKILL.md" ] && { cible="$d"; break; }
   done
 fi
-[ -n "$cible" ] && [ -d "$cible/.git" ] || { echo "PAS DE DÉPÔT ÉLÈVE : la session doit aussi ouvrir le dépôt « mes-videos-adcloner » de l'élève."; exit 2; }
+[ -n "$cible" ] && [ -d "$cible/.git" ] || { echo "PAS DE DÉPÔT ÉLÈVE : la session doit aussi ouvrir le dépôt « mes-videos-amine-ia » de l'élève."; exit 2; }
 jour=$(date +%Y-%m-%d); nom=$(basename "${1%.*}"); dest="livraisons/$jour/$nom"
 mkdir -p "$cible/$dest"
 cp "$@" "$cible/$dest/"
