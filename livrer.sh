@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Livre des fichiers finis dans le dépôt de l'élève (« mes-videos-amine-ia », ouvert dans la même session) et affiche le lien de la vidéo.
 # Usage : bash livrer.sh <video.mp4> [fiche.json controle.txt …]  → <dépôt élève>/livraisons/<AAAA-MM-JJ>/<nom de la vidéo>/
-# Dépôt de l'élève : variable ADCLONER_LIVRAISONS, sinon le dépôt git voisin qui ne contient pas AdCloner.
+# Dépôt de l'élève : variable ADCLONER_LIVRAISONS, sinon le dépôt git voisin qui ne contient pas le skill.
 set -e
 [ $# -ge 1 ] || { echo "usage : bash livrer.sh <video.mp4> [autres fichiers]"; exit 1; }
 for f in "$@"; do [ -f "$f" ] || { echo "fichier introuvable : $f"; exit 1; }; done
@@ -9,7 +9,7 @@ ici="$(cd "$(dirname "$0")" && pwd)"
 cible="${ADCLONER_LIVRAISONS:-}"
 if [ -z "$cible" ]; then
   for d in "$(dirname "$ici")"/*/; do
-    d="${d%/}"; [ -d "$d/.git" ] && [ ! -f "$d/adcloner/SKILL.md" ] && { cible="$d"; break; }
+    d="${d%/}"; [ -d "$d/.git" ] && [ ! -f "$d/amine/SKILL.md" ] && { cible="$d"; break; }
   done
 fi
 [ -n "$cible" ] && [ -d "$cible/.git" ] || { echo "PAS DE DÉPÔT ÉLÈVE : la session doit aussi ouvrir le dépôt « mes-videos-amine-ia » de l'élève."; exit 2; }

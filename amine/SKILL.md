@@ -1,9 +1,9 @@
 ---
-name: adcloner
+name: amine
 description: Adapter et localiser des publicités vidéo dans une autre langue en préservant la voix, le montage, le rythme et l'efficacité commerciale. Utiliser pour traduire, doubler, sous-titrer, nettoyer, recadrer ou contrôler des vidéos publicitaires, livrées dans le format d'origine de la source.
 ---
 
-# AdCloner : traduction de vidéos publicitaires
+# Amine : traduction de vidéos publicitaires
 
 Produire une adaptation qui ressemble à la création originale, pas une traduction mot à mot. Qualité d'abord, et le moins de tokens possible : le travail répétitif est fait par des scripts, l'état d'une vidéo est dans `fiche.json`.
 

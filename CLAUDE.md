@@ -11,8 +11,8 @@ L'élève est souvent débutant : réponds en français, tutoie-le, fais simple 
 **Ces règles passent avant celles du skill** quand elles se contredisent (le skill a été écrit pour un autre usage).
 
 ## La méthode
-Suis le skill `adcloner/SKILL.md` (puis `adcloner/references/00-coeur.md`) à la lettre, **une vidéo à la fois**.
-Les scripts sont dans `adcloner/scripts/`. Travaille dans `travail/<REF>/` (jamais versionné). Ne modifie jamais les fichiers de `adcloner/`.
+Suis le skill `amine/SKILL.md` (puis `amine/references/00-coeur.md`) à la lettre, **une vidéo à la fois**.
+Les scripts sont dans `amine/scripts/`. Travaille dans `travail/<REF>/` (jamais versionné). Ne modifie jamais les fichiers de `amine/`.
 
 ## Au début de chaque conversation : vérifier l'installation
 Lance une seule fois, sans jamais afficher les valeurs :
@@ -51,7 +51,7 @@ Dis clairement quel service bloque et quoi faire ; ne contourne jamais un blocag
 ## Livrer
 Quand le contrôle est bon, garde son rapport puis livre la vidéo **avec sa fiche et le rapport** (ils servent au formateur pour améliorer Amine) :
 ```bash
-python3 adcloner/scripts/controle.py travail/<REF> --planche > travail/<REF>/controle.txt 2>&1
+python3 amine/scripts/controle.py travail/<REF> --planche > travail/<REF>/controle.txt 2>&1
 bash livrer.sh travail/<REF>/<REF>_<LANGUE>_<FORMAT>_v01.mp4 travail/<REF>/fiche.json travail/<REF>/controle.txt
 ```
 Avant la livraison, ajoute dans `fiche.json` une clé `bilan` : `{"duree_source_s", "vmake_s", "caracteres_elevenlabs", "replicate_appels", "reprises", "problemes": [...]}` (ce qui a bloqué ou demandé une intervention).
@@ -60,6 +60,6 @@ Le script range le tout dans le dépôt de l'élève (`mes-videos-amine-ia/livra
 Puis résume en 3 lignes : ce qui a été fait, ce qui a été consommé, ce qu'il doit vérifier lui-même (voix, plans remplacés).
 
 ## Interdits
-- Modifier ou pousser quoi que ce soit dans `amine-monteur-video-ia` (`adcloner/`, `vmake-skill/`, `setup.sh`…). Le seul dépôt où tu écris est `mes-videos-amine-ia`, par `livrer.sh`.
+- Modifier ou pousser quoi que ce soit dans `amine-monteur-video-ia` (`amine/`, `vmake-skill/`, `setup.sh`…). Le seul dépôt où tu écris est `mes-videos-amine-ia`, par `livrer.sh`.
 - Publier quoi que ce soit (Meta, réseaux sociaux) : l'élève s'en charge.
 - Générer des vidéos par IA ou utiliser un service payant non listé ci-dessus sans l'accord explicite de l'élève, coût annoncé.

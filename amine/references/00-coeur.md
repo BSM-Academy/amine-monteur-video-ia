@@ -1,4 +1,4 @@
-# AdCloner : cœur de la procédure
+# Amine : cœur de la procédure
 
 Adapter une publicité vidéo dans une autre langue en gardant son impact commercial, son montage, son rythme, avec une voix naturelle, des sous-titres exacts et **un seul export au format d'origine**. Fonctionne pour toute paire de langues.
 
